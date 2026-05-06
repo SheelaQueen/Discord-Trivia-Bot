@@ -5,6 +5,8 @@
   "main": "index.js",
   "isGitBuild": true,
   "scripts": {
+    "build:win": "./script/package_win.sh",
+    "build:linux": "./script/package_linux.sh",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "lint": "eslint ./"
