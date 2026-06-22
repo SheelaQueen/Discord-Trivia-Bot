@@ -168,7 +168,7 @@ if(config["allow-eval"] === true) {
     var cmdFunction = cmdFull[0];
 
     if(typeof evalCmds[cmdFunction] === "function") {
-      // Remove the first word (the command itself) before pasing it
+      // Remove the first word (the command itself) before parsing it
       cmdFull.shift(1);
 
       // Execute the command with any further parameters as an array
