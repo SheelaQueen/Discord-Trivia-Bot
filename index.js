@@ -171,8 +171,13 @@ if(config["allow-eval"] === true) {
       // Remove the first word (the command itself) before parsing it
       cmdFull.shift(1);
 
+      try {
       // Execute the command with any further parameters as an array
       evalCmds[cmdFunction](cmdFull);
+      } catch(err) {
+        console.error("Failed to run command with error:");
+        console.error(err);
+      }
     }
     else {
       console.log("Eval:");
