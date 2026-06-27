@@ -27,7 +27,6 @@
     "discord.js": "^14.16.3",
     "html-entities": "^1.4.0",
     "js-yaml": "^5.2.0",
-    "node-fetch": "^2.6.1",
     "semver-compare": "^1.0.0"
   },
   "devDependencies": {
